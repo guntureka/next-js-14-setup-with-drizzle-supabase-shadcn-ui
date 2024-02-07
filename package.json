@@ -7,10 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "migrations:generate": "drizzle-kit generate:pg --config=drizzle.config.ts",
-    "migrations:drop": "drizzle-kit drop:pg --config=drizzle.config.ts",
-    "migrations:push": "drizzle-kit push:pg --config=drizzle.config.ts",
-    "migrations:pull": "drizzle-kit pull:pg --config=drizzle.config.ts",
+    "generate": "drizzle-kit generate:pg",
+    "push": "drizzle-kit push:pg",
+    "pull": "drizzle-kit introspect:pg",
+    "check": "drizzle-kit check:pg",
+    "drop": "drizzle-kit drop",
     "studio": "drizzle-kit studio"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
     "@supabase/auth-helpers-nextjs": "^0.9.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "dotenv": "^16.4.1",
     "drizzle-orm": "^0.29.3",
     "lucide-react": "^0.323.0",
     "next": "14.1.0",
